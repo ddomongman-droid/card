@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김태권 · 디지털 명함</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-blobs" aria-hidden="true"></div>
+
+  <main class="card" id="card">
+    <header class="card__header">
+      <div class="avatar" role="img" aria-label="30대 스마트한 남성 캐릭터 일러스트">
+        <svg class="avatar__svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f2d8c8"/>
+              <stop offset="100%" stop-color="#e0c0a8"/>
+            </linearGradient>
+            <linearGradient id="suitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#2c3e50"/>
+              <stop offset="100%" stop-color="#1a252f"/>
+            </linearGradient>
+            <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#1c1410"/>
+              <stop offset="100%" stop-color="#2a2218"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="100" cy="188" rx="76" ry="20" fill="rgba(15,25,40,.14)"/>
+          <path d="M28 168 Q100 195 172 168 L178 200 L22 200 Z" fill="url(#suitGrad)"/>
+          <path d="M78 148 L100 168 L122 148 L118 200 L82 200 Z" fill="#ecf0f3"/>
+          <path d="M100 168 L88 200 L112 200 Z" fill="#1e3a52"/>
+          <path d="M96 148 L100 175 L104 148 Z" fill="#152a38"/>
+          <path d="M100 42 C62 42 36 72 36 108 C36 138 52 162 76 170 L76 178 C76 178 88 168 100 168 C112 168 124 178 124 178 L124 170 C148 162 164 138 164 108 C164 72 138 42 100 42Z" fill="url(#skinGrad)"/>
+          <ellipse cx="62" cy="118" rx="10" ry="14" fill="url(#skinGrad)"/>
+          <ellipse cx="138" cy="118" rx="10" ry="14" fill="url(#skinGrad)"/>
+          <path d="M44 88 Q100 32 156 88 C152 58 132 28 100 28 C68 28 48 58 44 88Z" fill="url(#hairGrad)"/>
+          <path d="M100 28 C78 28 60 42 52 65 C70 48 92 42 100 42 C112 42 132 50 148 68 C140 42 122 28 100 28Z" fill="#3d3228" opacity=".4"/>
+          <path d="M92 28 L108 28 L106 52 L94 52 Z" fill="#1a1410" opacity=".5"/>
+          <path d="M56 95 Q72 88 86 93" fill="none" stroke="#2a2218" stroke-width="3.8" stroke-linecap="round"/>
+          <path d="M114 93 Q128 88 144 95" fill="none" stroke="#2a2218" stroke-width="3.8" stroke-linecap="round"/>
+          <rect x="48" y="99" width="46" height="30" rx="11" fill="rgba(255,255,255,.06)" stroke="#7a8a99" stroke-width="2"/>
+          <rect x="106" y="99" width="46" height="30" rx="11" fill="rgba(255,255,255,.06)" stroke="#7a8a99" stroke-width="2"/>
+          <line x1="94" y1="114" x2="106" y2="114" stroke="#7a8a99" stroke-width="2.2"/>
+          <line x1="48" y1="112" x2="38" y2="108" stroke="#7a8a99" stroke-width="2"/>
+          <line x1="152" y1="112" x2="162" y2="108" stroke="#7a8a99" stroke-width="2"/>
+          <ellipse cx="71" cy="114" rx="8" ry="6.5" fill="#1a1510"/>
+          <ellipse cx="129" cy="114" rx="8" ry="6.5" fill="#1a1510"/>
+          <circle cx="74" cy="112" r="2.5" fill="#fff" opacity=".7"/>
+          <circle cx="132" cy="112" r="2.5" fill="#fff" opacity=".7"/>
+          <path d="M88 134 Q100 140 112 134" fill="none" stroke="#a07060" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M96 124 L100 132 L104 124" fill="none" stroke="rgba(160,96,80,.35)" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="card__intro">
+        <p class="card__badge">Digital Business Card</p>
+        <h1 class="card__name">김태권</h1>
+        <p class="card__role">보험회사 직원</p>
+        <p class="card__tagline">설계사님들의 리크루팅을 전폭적으로 지원합니다.</p>
+      </div>
+    </header>
+
+    <ul class="contacts" role="list">
+      <li>
+        <a class="contact-link" href="mailto:ktk11232@naver.com" data-copy="ktk11232@naver.com">
+          <span class="contact-link__label">이메일</span>
+          <span class="contact-link__value">ktk11232@naver.com</span>
+        </a>
+      </li>
+      <li>
+        <a class="contact-link" href="tel:01034122415" data-copy="010-3412-2415">
+          <span class="contact-link__label">전화</span>
+          <span class="contact-link__value">010-3412-2415</span>
+        </a>
+      </li>
+      <li>
+        <a class="contact-link contact-link--youtube" href="https://www.youtube.com/@TESTNEWSTAR" target="_blank" rel="noopener noreferrer">
+          <svg class="contact-link__yt-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12 9.545 15.568z"/>
+          </svg>
+          <span class="contact-link__stack">
+            <span class="contact-link__label">유튜브</span>
+            <span class="contact-link__value">youtube.com/@TESTNEWSTAR</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+
+    <p class="toast" id="toast" role="status" aria-live="polite" hidden>복사되었습니다</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
